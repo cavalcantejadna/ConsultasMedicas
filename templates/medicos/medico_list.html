@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+    <h3>Lista de Médicos</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <td>Nome</td>
+                <td>CRM</td>
+                <td>Especialidade</td>
+            </tr>
+        </thead>
+        <tbody>
+            {% for m in medicos %}
+               <tr>
+                <td>{{ m.nome }}</td>
+                <td>{{ m.crm }}</td>
+                <td>{{ m.especialidade }}</td>
+               </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+    </head>
+    <body>
+        <center><h1>Bem Vindo ao Sistema de Agendamento de Consultas</h1></center>
+        <hr>
+        <center>
+            <a href="{% url 'home' %}">Inicio</a>
+            <a href="{% url 'medico_list' %}">Listar Médicos</a>
+            <a href="{% url 'medico_new' %}">Cadastrar Médico</a>
+            <a href="{% url 'paciente_list' %}">Listar Pacientes</a>
+            <a href="{% url 'paciente_new' %}">Cadastrar Paciente</a>
+            <a href="{% url 'consulta_list' %}">Listar Consultas</a>
+            <a href="{% url 'consulta_new' %}">Cadastrar Consulta</a>
+            <a href="{% url 'logout'%}">Sair</a>
+        </center>
+        {% block conteudo %}
+        {% endblock %}
+    </body>
+</html>
