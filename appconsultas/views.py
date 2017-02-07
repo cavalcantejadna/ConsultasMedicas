@@ -60,4 +60,4 @@ def consulta_list(request):
     dados = {'consultas': consultas}
     return render(request, 'consultas/consulta_list.html', dados)
 
-#FIM NADA
+#FIM NADA AINDA
