@@ -59,3 +59,5 @@ def consulta_list(request):
     consultas = Consulta.objects.all()
     dados = {'consultas': consultas}
     return render(request, 'consultas/consulta_list.html', dados)
+
+#FIM
